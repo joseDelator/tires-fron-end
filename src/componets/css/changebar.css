@@ -1,0 +1,42 @@
+.bar-container{
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    width: 80%;
+    height: 35px;    
+    z-index: 1000;
+    left:10%; 
+    background-color: whitesmoke;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+.bar-container .section{
+    width: 33.3333333%;
+  font-size: 200%;
+  z-index: 12;
+  color:black;
+  text-decoration: none;
+  
+}
+
+
+.bar-container .section:nth-child(1){
+    background-color: #c1ecb9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.bar-container .section:nth-child(2){
+    
+    
+}
+.bar-container .section:nth-child(2) svg{
+    fill: green;
+    height: 100%;
+}
+.bar-container .section:nth-child(3){
+    background-color: #f7bdc9 ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import LisTires from "./componets/alltires";
+import Addtires from "./componets/addingtires";
+import Changebar from "./componets/Changebar";
+import Subtire from "./componets/subtrackingtires";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Router>
+          <Changebar/>
+          <Switch>
+            <Route exact path='/'component={LisTires}/>
+            <Route exact path='/add' component={Addtires}/>
+            <Route exact path='/subtract' component={Subtire}/>
+          </Switch>
+       </Router>
+      </div>
+    );
+  }
 }
 
 export default App;
+
