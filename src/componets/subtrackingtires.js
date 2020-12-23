@@ -22,7 +22,7 @@ class Subtire extends Component {
             
             console.log(this.state.tire)
             
-            const response = await fetch("https://el-tecolte-tires.herokuapp.com/tires/",{
+            const response = await fetch("https://el-tecolte-tires.herokuapp.com/tires",{
             method: 'DELETE', 
             
             headers: {
@@ -52,11 +52,11 @@ class Subtire extends Component {
          var output= this.state.output
          const conditional= ()=> {
           
-          if(this.state.show == 404 || this.state.show ==400 ){
+          if(this.state.show === 404 || this.state.show === 400 ){
           return <h1>{output}</h1>
           }else{
-            if(this.state.show == 200){
-            return <h1> {this.state.output.width }/{this.state.output.ratio} R{this.state.output.rim} :  {this.state.output.quantity}</h1>
+            if(this.state.show === 200){
+            return <h1> {output.width }/{output.ratio} R{output.rim} :  {this.state.output.quantity}</h1>
             }
         }
         }
@@ -73,6 +73,7 @@ class Subtire extends Component {
                     value={this.state.width} 
                     step="5" 
                     onChange= {this.onChange1}
+                    pattern="\\d*"
                     required />
                     <h3>Ratio</h3>
                     <input
@@ -81,6 +82,7 @@ class Subtire extends Component {
                     min="10" 
                     value = {this.state.ratio}
                     name="ratio"
+                    pattern="\\d*"
                     onChange= {this.onChange1} 
                     required/>
                     <h3>rim</h3>
@@ -89,6 +91,7 @@ class Subtire extends Component {
                     max="120" 
                     min="3"
                     name="rim"
+                    pattern="\\d*"
                     value={this.state.rim}
                     onChange= {this.onChange1}
                     required/>
@@ -99,9 +102,11 @@ class Subtire extends Component {
                     min ="0"
                     max="45"
                     name="tire"
+                    pattern="\\d*"
                     value={this.state.tire}
                     onChange={this.onChange1}
                     required/>
+                  
                      <button >Subtract</button>    
                 </form>
                 </div>

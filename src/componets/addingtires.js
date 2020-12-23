@@ -67,6 +67,7 @@ class Addtire extends Component {
                     name="width" 
                     value={this.state.width} 
                     step="5" 
+                    pattern="\\d*"
                     onChange= {this.onChange1}
                     required />
                     <h3>Ratio</h3>
@@ -76,6 +77,7 @@ class Addtire extends Component {
                     min="10" 
                     value = {this.state.ratio}
                     name="ratio"
+                    pattern="\\d*"
                     onChange= {this.onChange1} 
                     required/>
                     <h3>rim</h3>
@@ -84,6 +86,7 @@ class Addtire extends Component {
                     max="120" 
                     min="3"
                     name="rim"
+                    pattern="\\d*"
                     value={this.state.rim}
                     onChange= {this.onChange1}
                     required/>
@@ -94,6 +97,7 @@ class Addtire extends Component {
                     min ="0"
                     max="45"
                     name="tire"
+                    pattern="\\d*"
                     value={this.state.tire}
                     onChange={this.onChange1}
                     required/>
