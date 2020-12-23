@@ -73,7 +73,7 @@ class Subtire extends Component {
                     value={this.state.width} 
                     step="5" 
                     onChange= {this.onChange1}
-                    pattern="\\d*"
+                    pattern="[0-9]*"
                     required />
                     <h3>Ratio</h3>
                     <input
@@ -82,7 +82,7 @@ class Subtire extends Component {
                     min="10" 
                     value = {this.state.ratio}
                     name="ratio"
-                    pattern="\\d*"
+                    pattern="[0-9]*"
                     onChange= {this.onChange1} 
                     required/>
                     <h3>rim</h3>
@@ -91,7 +91,7 @@ class Subtire extends Component {
                     max="120" 
                     min="3"
                     name="rim"
-                    pattern="\\d*"
+                    pattern="[0-9]*"
                     value={this.state.rim}
                     onChange= {this.onChange1}
                     required/>

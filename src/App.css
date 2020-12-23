@@ -78,6 +78,7 @@ button{
     position: relative;
     border-radius: 20px;
     border: 5px solid green;
+    margin-bottom: 50px;
   }
   .table td{
     font-size: 200%;

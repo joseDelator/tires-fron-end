@@ -68,34 +68,37 @@ class Addtire extends Component {
                     name="width" 
                     value={this.state.width} 
                     step="5" 
-                    pattern="\d*"
+                    pattern="[0-9]*"
                     onChange= {this.onChange1}
                     required />
                     <h3>Ratio</h3>
+
                     <input
                     type="number" 
                     max="225" 
                     min="10" 
                     value = {this.state.ratio}
                     name="ratio"
-                    pattern="\\d*"
+                    pattern="[0-9]*"
                     onChange= {this.onChange1} 
                     required/>
                     <h3>rim</h3>
+
                     <input 
                     type="number" 
                     max="120" 
                     min="3"
                     name="rim"
-                    pattern="\\d*"
+                    pattern="[0-9]*"
                     value={this.state.rim}
                     onChange= {this.onChange1}
                     required/>
                 
-                    <h3>Numbrer added</h3>   
+                    <h3>Numbrer added</h3>
+                       
                   <input 
                     type="number"
-                    min ="0"
+                    min ="1"
                     max="45"
                     name="tire"
                     pattern="[0-9]*"

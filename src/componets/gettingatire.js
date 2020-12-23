@@ -53,9 +53,14 @@ class Gettire extends Component {
                     name="width" 
                     value={this.state.width} 
                     step="5" 
+                    pattern="[0-9]*"
                     onChange= {this.onChange1} />
                   <h3>ratio</h3>
-                  <input type="number" max="225" min="10" 
+                  <input 
+                  type="number" 
+                  max="225" 
+                  min="10"
+                  pattern="[0-9]*"
                   value = {this.state.ratio}
                   name="ratio"
                   onChange= {this.onChange1} />
@@ -65,6 +70,7 @@ class Gettire extends Component {
                   max="120" 
                   min="3"
                   name="rim"
+                  pattern="[0-9]*"
                   value={this.state.rim}
                   onChange= {this.onChange1}/>
                   
