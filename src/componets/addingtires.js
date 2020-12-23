@@ -62,12 +62,13 @@ class Addtire extends Component {
                 <form className="d-flex mt-5" onSubmit={this.onSubmitForm}>
                   <h3>Width</h3>
                 <input 
-                    type="number" 
+
+                    type='NUMBER' 
                     max="500"
                     name="width" 
                     value={this.state.width} 
                     step="5" 
-                    pattern="\\d*"
+                    pattern="\d*"
                     onChange= {this.onChange1}
                     required />
                     <h3>Ratio</h3>
@@ -97,7 +98,7 @@ class Addtire extends Component {
                     min ="0"
                     max="45"
                     name="tire"
-                    pattern="\\d*"
+                    pattern="[0-9]*"
                     value={this.state.tire}
                     onChange={this.onChange1}
                     required/>
