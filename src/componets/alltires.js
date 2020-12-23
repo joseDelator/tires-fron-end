@@ -9,7 +9,7 @@ const ListTires = () => {
 
   const getTodos = async () => {
     try {
-      const response = await fetch("http://localhost:5001/tires");
+      const response = await fetch("https://el-tecolte-tires.herokuapp.com/tires");
       const jsonData = await response.json();
 
       setTodos(jsonData);

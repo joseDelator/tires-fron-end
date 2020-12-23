@@ -22,7 +22,7 @@ class Addtire extends Component {
             
             console.log(this.state.tire)
             
-            const response = await fetch("http://localhost:5001/tires/",{
+            const response = await fetch("https://el-tecolte-tires.herokuapp.com/tires/",{
             method: 'POST', 
             
             headers: {

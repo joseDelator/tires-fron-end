@@ -21,7 +21,7 @@ class Gettire extends Component {
             
 
             
-            const response = await fetch("http://localhost:5001/tires/"+this.state.width+'/'+this.state.ratio+'/'+this.state.rim +'/',
+            const response = await fetch("https://el-tecolte-tires.herokuapp.com/tires/"+this.state.width+'/'+this.state.ratio+'/'+this.state.rim +'/',
             );
             console.log(this.state.width);
             const jsonData = await response.json();
