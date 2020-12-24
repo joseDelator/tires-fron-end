@@ -102,7 +102,7 @@ class Subtire extends Component {
                     min ="0"
                     max="45"
                     name="tire"
-                    pattern="\\d*"
+                    pattern="[0-9]*"
                     value={this.state.tire}
                     onChange={this.onChange1}
                     required/>
