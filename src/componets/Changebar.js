@@ -6,9 +6,9 @@ class Changebar extends Component {
     render() {
         return (
             <div className="bar-container">
-                <Link className="section"id="1" to="/add">+</Link>
-                <Link className="section"id="2" to="/"><Changebartiresvg/></Link>
-                <Link className="section"id="3"to="/subtract">-</Link>
+                <Link className="section"id="1" to="/dash/add">+</Link>
+                <Link className="section"id="2" to="/dash/"><Changebartiresvg/></Link>
+                <Link className="section"id="3"to="/dash/subtract">-</Link>
             </div>
         );
     }

@@ -1,6 +1,6 @@
 import React, { Fragment, Component} from "react";
-
-   
+import Dash from "../routes/dash";
+import Changbar from './Changebar'  
 class Subtire extends Component {
         state={
           width: '',
@@ -62,9 +62,10 @@ class Subtire extends Component {
         }
         return (
             <Fragment>
+              <Changbar/>
                <h1>Sub</h1>
                <div className="container">
-                <form className="d-flex mt-5" onSubmit={this.onSubmitForm}>
+                <form onSubmit={this.onSubmitForm}>
                   <h3>Width</h3>
                 <input 
                     type="number" 

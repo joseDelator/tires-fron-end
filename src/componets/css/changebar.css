@@ -34,6 +34,7 @@
 .bar-container .section:nth-child(2) svg{
     fill: green;
     height: 32px;
+    margin-bottom: 13px;
 }
 .bar-container .section:nth-child(3){
     background-color: #f7bdc9 ;

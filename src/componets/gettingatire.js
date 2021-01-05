@@ -45,7 +45,7 @@ class Gettire extends Component {
                 <h1 className="text-center mt-5">Tecolote</h1>
                 <div className="container">
                
-               <form className="d-flex mt-5" onSubmit={this.onSubmitForm}>
+               <form onSubmit={this.onSubmitForm}>
                  <h3>Width</h3>
                 <input 
                     type="number" 
