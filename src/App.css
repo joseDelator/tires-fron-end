@@ -5,7 +5,7 @@
   margin: 0;
   color: green;
   text-transform: capitalize;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Anton', sans-serif;
 }
 
 input{
@@ -27,8 +27,9 @@ input:focus{
 }
 button{
   width: 100%;
-  background-color: lightslategray;
+  background-color: green;
   border: 0px solid;
+  padding: 0;
   box-sizing: border-box;
   margin-top: 20px;
   max-height: 30px;
@@ -51,8 +52,10 @@ button{
 }
 .container{
   margin-left: 1%;
-  background-color:whitesmoke;
-  width: 98%;
+  background-color: grey;
+  width: 98% ;
+  max-width: 1000px;
+  color: aliceblue;
   border-radius: 10px;
   text-align: left;
   justify-content: center;
@@ -63,7 +66,18 @@ button{
   padding-left: 1%;
   align-self: left;
   margin: 0;
+  font-style: italic;
 }
+.logout{
+  margin: none;
+
+  height: 12000px;
+  margin-top: 0;
+  background-color: red;
+  color: white;
+  top:0; 
+}
+
 
 @media(min-width: 1000px){
 
@@ -74,6 +88,7 @@ button{
   }
   .table{
     width: 1000px;
+    min-width: none;
     left: calc(50% - 500px);
     position: relative;
     border-radius: 20px;

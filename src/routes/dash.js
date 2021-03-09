@@ -42,7 +42,7 @@ const Dash = ({ setAuth }) => {
     return (
       <div className="App">
         <Router>
-        <button onClick={e => logout(e)} className="btn btn-primary">
+        <button onClick={e => logout(e)} className="logout">
         Logout
       </button>
           <Switch>
