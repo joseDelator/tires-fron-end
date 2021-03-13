@@ -1,5 +1,5 @@
 import React, { Fragment, Component} from "react";
-import Dash from "../routes/dash";
+
 import Changbar from './Changebar'  
 class Subtire extends Component {
         state={

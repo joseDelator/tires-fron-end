@@ -47,8 +47,12 @@ button{
 .table td{
   font-size: 5vw;
   color: green;
-  border-bottom:1px solid black;
+  border-bottom:3px solid black;
   padding-top: 5%;
+}
+.table tr:nth-child(even){
+background-color: lightgray;
+
 }
 .container{
   margin-left: 1%;

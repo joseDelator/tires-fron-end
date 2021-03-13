@@ -1,5 +1,5 @@
 .bar-container{
-    display: flex;
+    display:flex;
     position: fixed;
     bottom: 10px;
     width: 80%;
@@ -14,14 +14,16 @@
 }
 .bar-container .section{
     width: 33.3333333%;
-
-  z-index: 12;
-  color:black;
-  text-decoration: none;
-  
-  
+    z-index: 12;
+    color:black;
+    text-decoration: none;
 }
-
+.bar-container .section h2{
+    height: 0;
+    font-size: 40px;
+    color: green;
+   bottom: 20px;
+}
 
 .bar-container .section:nth-child(1){
     background-color: #c1ecb9;
