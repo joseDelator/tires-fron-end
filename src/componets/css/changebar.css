@@ -17,18 +17,20 @@
     z-index: 12;
     color:black;
     text-decoration: none;
+
 }
 .bar-container .section h2{
     height: 0;
     font-size: 40px;
-    color: green;
-   bottom: 20px;
+    color: black;
+    margin-top: -10px;
 }
 
 .bar-container .section:nth-child(1){
     background-color: #c1ecb9;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+
 
 }
 
