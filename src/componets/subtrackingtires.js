@@ -81,6 +81,7 @@ class Subtire extends Component {
                     type="number" 
                     max="225" 
                     min="10" 
+                    step="5" 
                     value = {this.state.ratio}
                     name="ratio"
                     pattern="[0-9]*"
@@ -91,7 +92,6 @@ class Subtire extends Component {
                     type="number" 
                     max="120" 
                     min="3"
-                    step="5" 
                     name="rim"
                     pattern="[0-9]*"
                     value={this.state.rim}
