@@ -91,6 +91,7 @@ class Subtire extends Component {
                     type="number" 
                     max="120" 
                     min="3"
+                    step="5" 
                     name="rim"
                     pattern="[0-9]*"
                     value={this.state.rim}

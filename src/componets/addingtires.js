@@ -59,7 +59,7 @@ class Addtire extends Component {
           
             <Fragment>
               <Changbar/>
-               <h1>adding</h1>
+               <h1>Adding</h1>
                <div className="container">
                 <form  onSubmit={this.onSubmitForm}>
                   <h3>Width</h3>
@@ -79,6 +79,7 @@ class Addtire extends Component {
                     type="number" 
                     max="225" 
                     min="10" 
+                    step="5" 
                     value = {this.state.ratio}
                     name="ratio"
                     pattern="[0-9]*"

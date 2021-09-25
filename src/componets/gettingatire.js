@@ -60,6 +60,7 @@ class Gettire extends Component {
                   type="number" 
                   max="225" 
                   min="10"
+                  step="5" 
                   pattern="[0-9]*"
                   value = {this.state.ratio}
                   name="ratio"
