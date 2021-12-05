@@ -56,7 +56,8 @@ background-color: #f5f5f5;
 }
 .container{
   margin-left: 1%;
-  background-color: grey;
+  background-color: #deebdd;
+  background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
   width: 98% ;
   max-width: 1000px;
   color: aliceblue;
@@ -79,7 +80,6 @@ background-color: #f5f5f5;
   margin-top: 0;
   background-color: red;
   color: white;
-  
   margin-top: 5px;
   width: 90%; 
 }
