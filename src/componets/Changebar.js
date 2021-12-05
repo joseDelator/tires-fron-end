@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './css/changebar.css';
+import '../App.css'
 import Changebartiresvg from './changebartiresvg'
 class Changebar extends Component {
     render() {

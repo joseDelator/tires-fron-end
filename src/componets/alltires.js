@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect} from "react";
+import '../App.css'
 import Getire from "./gettingatire";
 import Changebar from "./Changebar"
 const ListTires = () => {

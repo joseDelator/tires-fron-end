@@ -1,7 +1,8 @@
 import React, { Fragment, useState } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { toast } from "react-toastify";
-
+import {FaLock, FaUser, FaChevronRight} from "react-icons/fa"
+import{GrMail} from "react-icons/gr"
 const Register = ({ setAuth }) => {
   const [inputs, setInputs] = useState({
     email: "",
@@ -45,35 +46,65 @@ const Register = ({ setAuth }) => {
 
   return (
     <Fragment>
-      <h1 className="mt-5 text-center">Register</h1>
-      <form onSubmit={onSubmitForm}>
+      <div class="container1">
+            <div class="screen">
+                <div class="screen__content">
+      <form className="login"onSubmit={onSubmitForm}>
+      <div className="login__field">
+      <i className="login__icon fas fa-lock"><GrMail/></i>
         <input
           type="text"
           name="email"
+          placeholder="Email"
+          className="login__input"
           value={email}
-          placeholder="email"
-          onChange={e => onChange(e)}
-          className="form-control my-3"
+          onChange={e => onChange(e)}  
         />
+        </div>
+        <div className="login__field">
+          <i className="login__icon fas fa-lock"><FaLock/></i>
         <input
           type="password"
           name="password"
+          placeholder="Password"
+          className="login__input"
           value={password}
-          placeholder="password"
           onChange={e => onChange(e)}
-          className="form-control my-3"
+          
         />
+        </div>
+        <div className="login__field">
+          <i className="login__icon fas fa-lock"><FaUser/></i>
         <input
           type="text"
           name="name"
           value={name}
-          placeholder="name"
+          placeholder="Name"
           onChange={e => onChange(e)}
-          className="form-control my-3"
+          className="login__input"
         />
-        <button className="btn btn-success btn-block">Submit</button>
+        </div>
+        <button className="button login__submit">
+        <span className="button__text">Register</span>
+         <i className="button__icon fas fa-chevron-right"><FaChevronRight/></i>
+        </button>
       </form>
-      <Link to="/login">login</Link>
+      <div class="social-login">
+            <Link className='link' to="/login">login</Link>
+             </div>
+      </div>
+      
+
+                <div class="screen__background">
+                    <span class="screen__background__shape screen__background__shape4"></span>
+                    <span class="screen__background__shape screen__background__shape3"></span>		
+                    <span class="screen__background__shape screen__background__shape2"></span>
+                    <span class="screen__background__shape screen__background__shape1"></span>
+                </div>	
+      </div>
+      </div>
+    
+      
     </Fragment>
   );
 };

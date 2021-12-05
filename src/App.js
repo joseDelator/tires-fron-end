@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
-import './App.css'
+
 import "react-toastify/dist/ReactToastify.css";
 import {
   BrowserRouter as Router,
@@ -15,6 +15,7 @@ import { toast } from "react-toastify";
 import Login from "./routes/login";
 import Register from "./routes/Register";
 import Dashboard from "./routes/dash";
+import Newlogin from "./componets/Newlogin";
 
 toast.configure();
 
@@ -46,6 +47,7 @@ function App() {
 
   return (
     <Fragment>
+
       <Router>
         <div className="App">
           <Switch>
@@ -78,7 +80,7 @@ function App() {
                 isAuthenticated ? (
                   <Dashboard {...props} setAuth={setAuth} />
                 ) : (
-                  <Redirect to="/login" />
+                  <Redirect  to="/login" />
                 )
               }
             />

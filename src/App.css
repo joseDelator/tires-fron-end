@@ -7,8 +7,7 @@
   text-transform: capitalize;
   font-family: 'Anton', sans-serif;
 }
-
-input{
+input[type=number]{
   left: 50%;
   font-size: 100%;
   width: 99%;
@@ -19,12 +18,13 @@ input{
   box-sizing: border-box;
   text-align: center;
 }
-input:focus{
+input[type=number]:focus{
   outline: none !important;
   background-color: white ;
   border-radius: 20px;
   color: green;
 }
+
 button{
   width: 100%;
   background-color: green;
@@ -45,13 +45,13 @@ button{
   width: 100%;
 }
 .table td{
-  font-size: 5vw;
+  font-size: 4vw;
   color: green;
-  border-bottom:3px solid black;
+  border-bottom:1px solid black;
   padding-top: 5%;
 }
 .table tr:nth-child(even){
-background-color: lightgray;
+background-color: #f5f5f5;
 
 }
 .container{
@@ -74,13 +74,16 @@ background-color: lightgray;
 }
 .logout{
   margin: none;
-
+  border-radius: 2px;
   height: 12000px;
   margin-top: 0;
   background-color: red;
   color: white;
-  top:0; 
+  
+  margin-top: 5px;
+  width: 90%; 
 }
+
 
 
 @media(min-width: 1000px){

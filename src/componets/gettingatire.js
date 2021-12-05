@@ -1,5 +1,5 @@
 import React, { Fragment, Component} from "react";
-
+import '../App.css'
    
 class Gettire extends Component {
         state={
@@ -15,7 +15,7 @@ class Gettire extends Component {
        };
       
         onSubmitForm = async e => {
-          this.setState({tire: 0})
+          this.setState({tire: ""})
           e.preventDefault();
           try {
             
@@ -42,9 +42,9 @@ class Gettire extends Component {
         
         return (
             <Fragment>
+               
                 <h1 className="text-center mt-5">Tecolote</h1>
                 <div className="container">
-               
                <form onSubmit={this.onSubmitForm}>
                  <h3>Width</h3>
                 <input 
@@ -80,6 +80,7 @@ class Gettire extends Component {
                 </div>
                 <h1>Quantity</h1>
         <h1>{this.state.tire}</h1>
+       
           </Fragment>
         )
     }
