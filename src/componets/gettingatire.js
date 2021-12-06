@@ -76,10 +76,12 @@ class Gettire extends Component {
                   onChange= {this.onChange1}/>
                   
                   <button >Check</button>
+                  <h1>Quantity</h1>
+        <h1>{this.state.tire}</h1>
+       
                 </form>
                 </div>
-                <h1>Quantity</h1>
-        <h1>{this.state.tire}</h1>
+              
        
           </Fragment>
         )

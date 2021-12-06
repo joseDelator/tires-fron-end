@@ -108,10 +108,11 @@ class Addtire extends Component {
                     value={this.state.tire}
                     onChange={this.onChange1}
                     required/>
+                     {conditional()}
                      <button >add</button>    
                 </form>
                 </div>
-           {conditional()}
+          
         
           </Fragment>
       

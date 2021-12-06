@@ -184,3 +184,9 @@
 .social-login__icon:hover {
 	transform: scale(1.5);	
 }
+@media(width< 550px ){
+    .screen{
+        width: 100%;
+        height: 100vh;
+    }
+}

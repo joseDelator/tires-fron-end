@@ -63,7 +63,7 @@ class Subtire extends Component {
         return (
             <Fragment>
               <Changbar/>
-               <h1>Sub</h1>
+               <h1>Subtract</h1>
                <div className="container">
                 <form onSubmit={this.onSubmitForm}>
                   <h3>Width</h3>
@@ -98,7 +98,7 @@ class Subtire extends Component {
                     onChange= {this.onChange1}
                     required/>
                 
-                    <h3>Numbrer sub</h3>   
+                    <h3>Numbrer subtracted</h3>   
                   <input 
                     type="number"
                     min ="0"
@@ -109,10 +109,11 @@ class Subtire extends Component {
                     onChange={this.onChange1}
                     required/>
                   
-                     <button >Subtract</button>    
+                     <button >Subtract</button>  
+                     {conditional()}  
                 </form>
                 </div>
-           {conditional()}
+           
         
           </Fragment>
       
